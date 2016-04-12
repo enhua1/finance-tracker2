@@ -40,10 +40,10 @@ def create
           end
       end
   end
-  
+
   respond_to do |format|
   if @user_stock.save
-  format.html { redirect_to my_portfolio_path, notice: "Stock #{@user_stock.stock.ticker} stock was successfully added" }
+  format.html { redirect_to my_portfolio_path, notice: "Stock #{@user_stock.stock.ticker}  was successfully added" }
   format.json { render :show, status: :created, location: @user_stock }
   else
   format.html { render :new }
